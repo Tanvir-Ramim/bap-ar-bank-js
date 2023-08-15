@@ -5,7 +5,7 @@ document.getElementById('btn-withdraw').addEventListener('click',function(){
     const withdrawAmount=parseFloat(withdrawAmountString)
     withdrawField.value=""
     if(isNaN(withdrawAmount)){
-        alert('Plase provide a valid Number')
+        alert('Please provide a valid Number')
         return;
     }
     const withdrawTotal =document.getElementById('withdraw-total')
@@ -28,6 +28,4 @@ document.getElementById('btn-withdraw').addEventListener('click',function(){
     const currentBalanceTotal=previousBalanceTotal-withdrawAmount
     balanceTotalEle.innerText=currentBalanceTotal
     
-
-   
 })
